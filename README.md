@@ -2,8 +2,7 @@
 
 
 ## Example
-
-`
+```
 #include <IFRAIoT.h>
  
 #define USERNAME "05fd5734-612d-4844-b90b-f554f59f37e2"
@@ -26,4 +25,4 @@ void loop() {
   device.send();
   delay(1000);
 }
-`
+```
