@@ -1,6 +1,7 @@
 #include <ESP8266WiFi.h>
 #include "WiFiUdp.h"
 #include <PubSubClient.h>
+#include <ArduinoJson.h>
 
 #ifndef IFRASERVER
 #define IFRASERVER "hub.ifra.io"
@@ -17,6 +18,8 @@ private:
     char* _password;
     WiFiClient _espClient;
     PubSubClient _mqtt_client;
+    JsonArray _arr;
+  
 
 public:
     IFRAIoT(char* username, char* password);
